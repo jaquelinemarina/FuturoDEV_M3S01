@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './timer.css'
 
 function Timer() {
-    const [initialMinutes, setInitialMinutes] = useState('')
+    const [initialMinutes, setInitialMinutes] = useState('0')
     const [secondsRemaining, setSecondsRemaining] = useState(0)
     const [isActive, setIsActive] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
@@ -63,7 +63,7 @@ function Timer() {
     return (
         <div className='container--timer'>
             <label htmlFor="minutesInput">Minutos:</label>
-            <input
+            <input 
                 id="minutesInput"
                 type="number"
                 value={initialMinutes}
@@ -72,21 +72,21 @@ function Timer() {
                 min="0"
                 max="60"
             />
-            {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-            <p>{formatTime(secondsRemaining)}</p>
-            <button
+            {errorMessage && <p style={{ color: 'red', fontSize: 18}}>{errorMessage}</p>}
+            <p className='container--timer-clock'>{formatTime(secondsRemaining)}</p>
+            <button class="btn btn-primary btn-lg"
                 onClick={startTimer}
                 disabled={!isInputValid || isActive}
             >
                 Iniciar
             </button>
-            <button
+            <button class="btn btn-primary btn-lg"
                 onClick={pauseTimer}
                 disabled={!isActive}
             >
                 Pausar
             </button>
-            <button
+            <button class="btn btn-primary btn-lg"
                 onClick={resetTimer}
                 disabled={!isActive && secondsRemaining === 0}
             >

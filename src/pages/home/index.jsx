@@ -8,10 +8,10 @@ function HomePage() {
     return (
         <div className='container--home'>
             <nav>
-                <button onClick={logout}>Sair</button>
+                <button class="btn btn-outline-primary btn-lg" onClick={logout}>Sair</button>
             </nav>
-            <h1>Seja bem-vindo ao Timer365!</h1>
-            <p>Defina seus minutos, inicie a contagem regressiva e aproveite a gestão do tempo de forma simples e eficiente.</p>
+            <h1 class="display-5">Seja bem-vindo ao Timer365!</h1>
+            <span className='container--home-subcription'>Defina seus minutos, inicie a contagem regressiva e aproveite a gestão do tempo de forma simples e eficiente.</span>
             < Timer />
         </div>
     )
