@@ -1,8 +1,6 @@
-# React + Vite
+# Timer365 ⏰
+**Timer365** é um temporizador com funcionalidade de login de usuário, desenvolvido utilizando **React.JS** e estilizado com **Bootstrap**. Desenvolvi este projeto como parte dos desafios semanais do Módulo 3 da formação **Futuro DEV - Floripa Mais Tec 2**, coordenada pelo **Lab365** em parceria com a **Prefeitura de Florianópolis**, **ACATE**, **SESI** e **SENAI**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br> 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/user-attachments/assets/b8a42e96-5587-436d-9b27-d542396a0e61
