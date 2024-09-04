@@ -1,12 +1,18 @@
 .container--home nav {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    padding: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
 }
 
-.container--home button{
-    width: 80px;
-    height: 30px;
-    cursor: pointer;
+.container--home button {
+  margin-right: 1rem;
+}
+
+.container--home-subcription {
+  display: block;
+  width: 600px;
+  font-size: 19px;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }

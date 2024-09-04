@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useAuth } from '../../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
+import './login.css'
 
 function Login() {
     const [email, setEmail] = useState('')
@@ -16,32 +17,33 @@ function Login() {
     }
 
     return (
-        <div>
-            <h1>Login</h1>
+        <div className='container--login'>
+            <h1 class="display-4">Timer365</h1>
+            <h3 class="display-7">Conecte-se à sua conta</h3>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
+                <div class="mb-4">
+                    <input class="form-control"
                         type="email"
                         id="email"
-                        placeholder='digite seu email'
+                        placeholder='Digite seu email:'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
-                <div>
-                    <label htmlFor="password">Senha:</label>
-                    <input
+                <div class="mb-4">
+                    <input class="form-control"
                         type="password"
                         id="password"
-                        placeholder='digite sua senha'
+                        placeholder='Digite sua senha:'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
                 </div>
-                <button type="submit">Entrar</button>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
+                </div>
             </form>
         </div>
     )
